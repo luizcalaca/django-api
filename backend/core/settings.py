@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     "allauth.account",
 ]
 
+AUTH_USER_MODEL = 'app.User'
+
 SITE_ID = 1
 
 MIDDLEWARE = [
@@ -72,6 +74,9 @@ REST_FRAMEWORK = {
     ],
 }
 
+REST_AUTH = {
+    'REGISTER_SERIALIZER': 'app.serializers.CustomRegisterSerializer',
+}
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
