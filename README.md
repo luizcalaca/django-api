@@ -10,6 +10,13 @@ source env/bin/activate
 pip install django
 ```
 
+#### Automated tests with pytest
+
+```
+cd backend
+pytest
+```
+
 #### Importants
 
 ```
