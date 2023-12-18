@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # My apps
-    'app',
+    'core.app',
     # Third party apps
     'django.contrib.sites',
     'rest_framework',
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     "allauth",
     "allauth.account",
+    "pytest"
 ]
 
 AUTH_USER_MODEL = 'app.User'
