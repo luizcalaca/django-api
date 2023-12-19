@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.utils import timezone
-from app.models import User, AmenityType, PropertyType, Room, Photo, Property, Amenity, Booking, RoomBooking, Review
+from core.app.models import User, AmenityType, PropertyType, Room, Photo, Property, Amenity, Booking, RoomBooking, Review
 
 
 class Command(BaseCommand):
