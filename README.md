@@ -10,6 +10,12 @@ source env/bin/activate
 pip install django
 ```
 
+#### Seeds database
+
+```
+python3 manage.py seed_db
+```
+
 #### Automated tests with pytest
 
 ```
@@ -54,4 +60,46 @@ Finally:
 
 ./manage.py migrate <app_name>
 Done. Table created.
+```
+
+## HTTP requests
+
+### Registration
+
+```
+http://127.0.0.1:8000/api/registration/ POST
+
+{
+    "username": "luiz.calaca2",
+    "password1": "!@#$!@#$",
+    "password2": "!@#$!@#$",
+    "is_host": true
+}
+```
+
+### Login
+
+```
+http://127.0.0.1:8000/api/login/ POST
+
+{
+    "username": "luiz.calaca2",
+    "password": "!@#$!@#$"
+}
+```
+
+### Bookings
+
+```
+http://127.0.0.1:8000/api/bookings/ GET
+
+headers {Authorization: Token d93792c5asdfasdfe744c414e2707}
+```
+
+### Properties
+
+```
+http://127.0.0.1:8000/api/properties/2 GET
+
+headers {Authorization: Token d93792c5asdfasdfe744c414e2707}
 ```
