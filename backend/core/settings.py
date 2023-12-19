@@ -76,7 +76,7 @@ REST_FRAMEWORK = {
 }
 
 REST_AUTH = {
-    'REGISTER_SERIALIZER': 'app.serializers.CustomRegisterSerializer',
+    'REGISTER_SERIALIZER': 'core.app.serializers.CustomRegisterSerializer',
 }
 
 CORS_ALLOWED_ORIGINS = [
